@@ -26,5 +26,5 @@ while True:
         print('Congratulations {}! You\'ve guessed the correct number with {}'.format(player_name, the_number))
         break
     else:
-        print('Sorry {}, you\'ve ran out of guesses. :( Maybe next time!')
-        break 
+        print('Sorry {}, you\'ve ran out of guesses. Maybe next time!'.format(player_name))
+        break
