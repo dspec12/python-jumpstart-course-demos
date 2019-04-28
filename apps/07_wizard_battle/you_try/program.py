@@ -24,7 +24,7 @@ def player_name():
 
 
 def bad_guy_gen():
-    names = [
+    types = [
         'Boar',
         'Bat',
         'Bear',
@@ -33,7 +33,7 @@ def bad_guy_gen():
         'Wizard',
         'Warlock'
     ]
-    return characters.BadGuy(random.choice(names), random.randint(1, 100))
+    return characters.BadGuy(random.choice(types), random.randint(1, 100))
 
 
 def game_loop(player):
