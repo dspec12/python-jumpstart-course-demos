@@ -55,7 +55,7 @@ def game_loop(player):
         print('\nA level {} {} emerges and is looking to fight.'.format(active_creature.lvl ,active_creature.name))
         time.sleep(1)
 
-        choice = input('\nDo you [a]ttack or [r]un away, [l]ook around? '.format('pass', 'pass'))
+        choice = input('\nDo you [a]ttack or [r]un away, [l]ook around? ')
         choice = choice.lower()
 
         if choice == 'a':
