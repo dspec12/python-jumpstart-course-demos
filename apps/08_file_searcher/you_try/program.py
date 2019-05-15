@@ -1,9 +1,6 @@
 import os
 import collections
 
-SearchResult = collections.namedtuple('SearchResult',
-                                      'file, line_num, line, text')
-
 
 def main():
 
@@ -70,6 +67,9 @@ def get_file_list(folder):
 
 
 def search_file(file, text):
+
+    SearchResult = collections.namedtuple('SearchResult',
+                                          'file, line_num, line, text')
 
     with open(file, 'r', encoding='utf-8') as fin:
         for num, line in enumerate(fin, 1):
